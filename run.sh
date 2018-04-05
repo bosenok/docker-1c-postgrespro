@@ -1,10 +1,10 @@
 #!/bin/sh
 
-docker run --name postgrespro-1c --restart always \
+docker run --name 1c-postgrespro --restart always \
   --net host \
   --detach \
-  --volume postgrespro-1c-data:/data \
+  --volume 1c-postgrespro-data:/data \
   --volume /etc/localtime:/etc/localtime:ro \
   --env POSTGRES_PASSWORD=123 \
   --env LC_MESSAGES = "ru_RU.UTF-8" \
-a4neg/postgrespro-1c
+bosenok/1c-postgrespro
